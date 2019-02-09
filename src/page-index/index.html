@@ -1,120 +1,115 @@
 <html lang="sr">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>Ružica Madžarević - Kreiraj životni stil po svojim pravilima</title>
-    <meta
-      name="description"
-      content="Kreiraj životni stil po svojim pravilima"
-    />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-  </head>
-  <body class="home blog">
-    <%= require('html-loader!../partials/header.html') %>
-    <div class="home">
-      <div class="home-hero-section Grid">
-        <div class="hero-content">
-          <h1>KO SAM JA?</h1>
-          <p>
-            Moje ime je Ružica Madžarević i bavim se psihologijom i
-            transakcionom analizom. Naučno rečeno tu sam da ljudima pružim
-            podršku da unaprede i očuvaju svoje mentalno zdravlje. Jednostavnije
-            rečeno pomažem ljudima da pronađu način da (p)ostanu srećni i
-            zadovoljni svojim životom.
-          </p>
-        </div>
-      </div>
-      <h2 class="orange-color">Ukoliko želiš da:</h2>
-      <div class="Grid grid-background">
-        <div class="home-goal-section Grid-cell outline-text-color">
-          <h2>
-            pomoću psiholoških znanja kreiraš životni stil po sopstvenim
-            pravilima
-          </h2>
-        </div>
-        <div class="home-values-section Grid-cell outline-text-color">
-          <h2>upoznaš sebe.</h2>
-          <h3>
-            Upoznavanje sebe je pozvanje načina da prevazidješ sopstvene blokade
-            i kažeš jasno svoje da i ne.
-          </h3>
-        </div>
-      </div>
 
-      <div class="Grid grid-background">
-        <div class="home-offer-section Grid-cell outline-text-color">
-          <h2>budeš samopuzdaniji</h2>
-          <p>
-            <b class="paragraf"
-              >"Važno je da kada usvojimo i neko ‚‚nemoj‚‚ usvojimo i šta možemo
-              da radimo. Znati šta - izgradjuje naše samopuzdanje, formira
-              sturkturu za testiranje granica i uči nas da razmišljamo. Zato su
-              najvažnije poruke koje učimo decu i sebe ove: Možeš da rešavaš
-              probleme! Možeš da razmišljaš! Možeš da radiš razne stvari!" - J.
-              Schiff</b
-            >
-          </p>
-        </div>
-        <div class="home-style-section Grid-cell outline-text-color">
-          <h2>pronadješ svoj put do lične moći:</h2>
-          <h3>
-            da dobiješ šta želiš i izbegneš ono što ne želiš i podneseš
-            razočarenje kada nije kako ti odgovara
-          </h3>
-        </div>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title>Ružica Madžarević - Kreiraj životni stil po svojim pravilima</title>
+  <meta name="description" content="Kreiraj životni stil po svojim pravilima" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+</head>
+
+<body class="home blog">
+  <%= require('html-loader!../partials/header.html') %>
+  <div class="home">
+    <div class="home-hero-section Grid">
+      <div class="hero-content">
+        <h1>KO SAM JA?</h1>
+        <p>
+          Moje ime je Ružica Madžarević i bavim se psihologijom i
+          transakcionom analizom. Naučno rečeno tu sam da ljudima pružim
+          podršku da unaprede i očuvaju svoje mentalno zdravlje. Jednostavnije
+          rečeno pomažem ljudima da pronađu način da (p)ostanu srećni i
+          zadovoljni svojim životom.
+        </p>
       </div>
-      <div class="home-featured-instructors-section">
-        <h2>Kreni nekom od ovih staza</h2>
-        <div class="featured-instructors-width-wrapper">
-          <div class="featured-instructor featured-instructor-teal">
-            <img src=<%= require('../images/koucing.jpg') %> alt="" />
-            <h3>KOUČING</h3>
-            <p>
-              Vidiš da negde blokiraš sebe i hoćeš da to prevaziđeš, npr. teško
-              ti je da odbiješ zahteve nekih ljudi ili se teško snalaziš kada
-              dođe do promena. U mom radu, koučing podrazumeva da:
-            </p>
-            <ul>
-              <li>
-                saznaš koje su ti veštine potrebne da naučiš ili dodatno
-                razviješ (obuka)
-              </li>
-              <li>
-                razumeš u kojim situacijama sebe blokiraš i naučiš kako da to
-                prevazidješ (savetovanje)
-              </li>
-            </ul>
-            <a class="button" href="localhost:3000/koucing">Opširnije</a>
-          </div>
-          <div class="featured-instructor featured-instructor-pink">
-            <img src=<%= require('../images/psihoterapija.jpg') %> alt="" />
-            <h3>PSIHOTERAPIJA</h3>
-            <p>
-              Psihoterapija je način da promeniš ono što misliš, radiš i šta
-              osećaš kako bi se prevazišao jaz u životni priči- gde sam i gde
-              želim da budem. Njačešće ljudi počinju sa psihoterapijom kada je
-              mesto na kojem su njima nepodnošljivo: loše se osećaju, bespomoćni
-              su pred nekim mislima, osećanjima i ponašanjam.
-            </p>
-            <a class="button" href="localhost:3000/psihoterapija">Opširnije</a>
-          </div>
-          <div class="featured-instructor featured-instructor-purple">
-            <img src=<%= require('../images/obuke.jpg') %> alt="" />
-            <h3>OBUKE</h3>
-            <p>
-              Mnoge veštine nekada nismo imali prilike da naučimo ni u školi
-              niti da neprimetno usvojimo u svojoj okolini. Jedan skup takvih
-              veština se zovu životne veštine i neke od poznatih jesu veština
-              komunikacije, planiranja, upravljanje sopstvenim emocijama.
-            </p>
-            <a class="button" href="localhost:3000/obuke">Opširnije</a>
-          </div>
+    </div>
+    <h2 class="orange-color">Ukoliko želiš da:</h2>
+    <div class="Grid grid-background">
+      <div class="home-goal-section Grid-cell outline-text-color">
+        <h2>
+          pomoću psiholoških znanja kreiraš životni stil po sopstvenim
+          pravilima
+        </h2>
+      </div>
+      <div class="home-values-section Grid-cell outline-text-color">
+        <h2>upoznaš sebe.</h2>
+        <h3>
+          Upoznavanje sebe je pozvanje načina da prevazidješ sopstvene blokade
+          i kažeš jasno svoje da i ne.
+        </h3>
+      </div>
+    </div>
+
+    <div class="Grid grid-background">
+      <div class="home-offer-section Grid-cell outline-text-color">
+        <h2>budeš samopuzdaniji</h2>
+        <p>
+          <b class="paragraf">"Važno je da kada usvojimo i neko ‚‚nemoj‚‚ usvojimo i šta možemo
+            da radimo. Znati šta - izgradjuje naše samopuzdanje, formira
+            sturkturu za testiranje granica i uči nas da razmišljamo. Zato su
+            najvažnije poruke koje učimo decu i sebe ove: Možeš da rešavaš
+            probleme! Možeš da razmišljaš! Možeš da radiš razne stvari!" - J.
+            Schiff</b>
+        </p>
+      </div>
+      <div class="home-style-section Grid-cell outline-text-color">
+        <h2>pronadješ svoj put do lične moći:</h2>
+        <h3>
+          da dobiješ šta želiš i izbegneš ono što ne želiš i podneseš
+          razočarenje kada nije kako ti odgovara
+        </h3>
+      </div>
+    </div>
+    <div class="home-featured-instructors-section">
+      <h2>Kreni nekom od ovih staza</h2>
+      <div class="featured-instructors-width-wrapper">
+        <div class="featured-instructor featured-instructor-teal">
+          <img src=<%=require('../images/koucing.jpg') %> alt="" />
+          <h3>KOUČING</h3>
+          <p>
+            Vidiš da negde blokiraš sebe i hoćeš da to prevaziđeš, npr. teško
+            ti je da odbiješ zahteve nekih ljudi ili se teško snalaziš kada
+            dođe do promena. U mom radu, koučing podrazumeva da:
+          </p>
+          <ul>
+            <li>
+              saznaš koje su ti veštine potrebne da naučiš ili dodatno
+              razviješ (obuka)
+            </li>
+            <li>
+              razumeš u kojim situacijama sebe blokiraš i naučiš kako da to
+              prevazidješ (savetovanje)
+            </li>
+          </ul>
+          <a class="button" href="couching.html">Opširnije</a>
+        </div>
+        <div class="featured-instructor featured-instructor-pink">
+          <img src=<%=require('../images/psihoterapija.jpg') %> alt="" />
+          <h3>PSIHOTERAPIJA</h3>
+          <p>
+            Psihoterapija je način da promeniš ono što misliš, radiš i šta
+            osećaš kako bi se prevazišao jaz u životni priči- gde sam i gde
+            želim da budem. Njačešće ljudi počinju sa psihoterapijom kada je
+            mesto na kojem su njima nepodnošljivo: loše se osećaju, bespomoćni
+            su pred nekim mislima, osećanjima i ponašanjam.
+          </p>
+          <a class="button" href="psychotherapy.html">Opširnije</a>
+        </div>
+        <div class="featured-instructor featured-instructor-purple">
+          <img src=<%=require('../images/obuke.jpg') %> alt="" />
+          <h3>OBUKE</h3>
+          <p>
+            Mnoge veštine nekada nismo imali prilike da naučimo ni u školi
+            niti da neprimetno usvojimo u svojoj okolini. Jedan skup takvih
+            veština se zovu životne veštine i neke od poznatih jesu veština
+            komunikacije, planiranja, upravljanje sopstvenim emocijama.
+          </p>
+          <a class="button" href="trainings.html">Opširnije</a>
         </div>
       </div>
     </div>
-    <%= require('html-loader!../partials/footer.html') %>
-  </body>
+  </div>
+  <%= require('html-loader!../partials/footer.html') %>
+</body>
+
 </html>

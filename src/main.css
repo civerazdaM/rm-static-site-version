@@ -597,7 +597,7 @@ a:active {
 .header {
   /*background-color: rgba(237,175,125,0.8);*/
   height: 77px;
-  background-color: rgba(237, 175, 125, 0.8);
+  background-color: rgba(237,175,125,0.8);
   overflow: visible;
   justify-content: space-between;
   width: 100%;
