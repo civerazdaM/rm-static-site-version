@@ -6,7 +6,12 @@ module.exports = {
   entry: {
     index: "./src/page-index/index.js",
     contact: "./src/page-contact/contact.js",
-    biography: "./src/page-biography/biography.js"
+    biography: "./src/page-biography/biography.js",
+    couching: "./src/page-couching/couching.js",
+    trainings: "./src/page-trainings/trainings.js",
+    psychotherapy: "./src/page-psychotherapy/psychotherapy.js",
+    article: "./src/page-article/article.js",
+    services: "./src/page-services/services.js"
   },
 
   // https://webpack.js.org/configuration/dev-server/
@@ -66,6 +71,36 @@ module.exports = {
       inject: true,
       chunks: ["biography"],
       filename: "biography.html"
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/page-couching/couching.html",
+      inject: true,
+      chunks: ["couching"],
+      filename: "couching.html"
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/page-trainings/trainings.html",
+      inject: true,
+      chunks: ["trainings"],
+      filename: "trainings.html"
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/page-psychotherapy/psychotherapy.html",
+      inject: true,
+      chunks: ["psychotherapy"],
+      filename: "psychotherapy.html"
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/page-article/article.html",
+      inject: true,
+      chunks: ["article"],
+      filename: "article.html"
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/page-services/services.html",
+      inject: true,
+      chunks: ["services"],
+      filename: "services.html"
     })
   ]
 };
