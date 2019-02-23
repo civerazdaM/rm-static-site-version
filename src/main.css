@@ -27,6 +27,16 @@ html {
   -ms-text-size-adjust: 100%;
 }
 
+h1,h2{
+  font-family: 'Lemon', cursive;
+}
+
+
+h3,p,li {
+ font-family: 'Josefin Sans', sans-serif;
+}
+
+
 body {
   margin: 0;
 }
@@ -225,7 +235,7 @@ input,
 select,
 textarea {
   color: #0b0b0b;
-  font-family: Raleway, Helvetica, Arial, sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   font-size: 16px;
   font-style: normal;
   font-size: 1em;
@@ -596,7 +606,7 @@ a:active {
 */
 .header {
   /*background-color: rgba(237,175,125,0.8);*/
-  height: 77px;
+  height: 79.01px;
   background-color: rgba(237,175,125,0.8);
   overflow: visible;
   justify-content: space-between;
@@ -606,6 +616,7 @@ a:active {
   left: 0;
   top: 0;
   display: flex;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
   /*dodatak*/
 
@@ -625,10 +636,18 @@ body.admin-bar .header {
   height: inherit;
 }
 
+.logo-wrapper {
+  display: block;
+  margin-left: 25.23px;
+  margin-top: 19.89px;
+}
+
 .logo-wrapper,
 .logo {
   display: block;
-  height: inherit;
+  height: 45.8px;
+  width: 57.82px;
+  
 }
 
 .main-navigation {
@@ -639,35 +658,32 @@ body.admin-bar .header {
 
 .main-navigation li {
   list-style-type: none;
-  height: inherit;
 }
 
 .main-navigation a {
-  box-sizing: border-box;
-  color: #fff;
+  color: #000;
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   display: block;
-  padding: 0 1.1em;
+  padding-top: 40px;
+  margin: 0 1.1em 0 1.1em;
   -moz-transition: all 0.5s ease;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
-  height: inherit;
-  background-color: rgba(237, 175, 125, 0.8);
-  /*border: 1px solid #fff;*/
-  font-weight: 400;
-  border-left: 1px solid #fff;
-  border-right: 1px solid #fff;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  line-height: 24px;
+  font-size: 16px;
+  text-transform: uppercase;
 }
 
 .main-navigation a:hover {
-  color: #000;
-  background-color: rgba(0, 0, 0, 0.2);
+  color: #6E1E3D;
+  border-bottom: 3px solid #6E1E3D;
   /*    border: 1px solid #000;
 */
-  border-left: 1px solid #000;
-  border-right: 1px solid #000;
 }
 
 .main-navigation a > span {
@@ -751,24 +767,40 @@ body.admin-bar .header {
 }
 
 .home .orange-color {
-  color: #333;
+  font-style: normal;
+font-weight: normal;
+line-height: 48px;
+font-size: 48px;
+text-transform: uppercase;
+color: #6E1E3D;
 }
 
 .home-hero-section {
   background: url(images/ruzica-madzarevic.jpg) no-repeat;
   background-size: cover;
   min-height: 550px;
+  position: relative;
 }
 
 .hero-content {
   background: rgba(237, 175, 125, 0.8);
-  float: left;
-  width: 35%;
+  position: absolute;
+  top: 41px;
+  right: 15px;
+  width: 40%;
+  height: 70%;
   min-width: 450px;
   padding: 0 3em;
   margin-top: 4em;
-  text-align: right;
-  color: #fff;
+  text-align: center;
+  color: #000;
+  border-radius: 100%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
+}
+
+.hero-content h1 {
+  font-family: 'Lemon', cursive;
+  color: #000;
 }
 
 .hero-content p {
@@ -803,35 +835,9 @@ body.admin-bar .header {
   background: #ff006f;
 }
 
-.home-goal-section,
-.home-values-section,
-.home-style-section {
-  box-sizing: border-box;
-  font-size: 1.2em;
-  line-height: 1.8;
-  color: #fff;
-  padding: 1.5em;
-  text-align: center;
-  opacity: 0.75;
-}
 
-.home-goal-section:hover,
-.home-values-section:hover,
-.home-offer-section:hover,
-.home-style-section:hover {
-  opacity: 1;
-}
-
-.home-values-section p,
-.home-goal-section p,
-.home-offer-section p,
-.home-style-section p {
-  max-width: none;
-}
 
 .home-featured-instructors-section {
-  background: url(images/staza.jpg) no-repeat;
-  background-size: cover;
   clear: both;
   overflow: auto;
   padding: 0 1em;
@@ -845,10 +851,20 @@ body.admin-bar .header {
 .home-featured-instructors-section h2 {
   text-align: center;
   padding-top: 1.5em;
+  font-family: Lemon;
+font-style: normal;
+font-weight: normal;
+line-height: 48px;
+font-size: 48px;
+text-transform: uppercase;
+padding: 0px;
+
+
+color: #6E1E3D;
 }
 
 .featured-instructor {
-  color: #fff;
+  color: #000;
   text-align: center;
   line-height: 1.9em;
   width: 30%;
@@ -859,11 +875,17 @@ body.admin-bar .header {
   box-shadow: none;
   box-sizing: border-box;
   transition: 0.5s all;
+ 
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
 }
 
-.featured-instructor:hover {
-  box-shadow: 0 0 20px 2px #0d0d0d;
+.featured-instructor h3 {
+  color: #000;
 }
+
+/* .featured-instructor:hover {
+  box-shadow: 0 0 20px 2px #0d0d0d;
+} */
 
 .featured-instructor h3 {
   margin-bottom: 0.5em;
@@ -874,25 +896,25 @@ body.admin-bar .header {
 }
 
 .featured-instructor-pink {
-  background: rgba(0, 0, 0, 0.84);
+  background: rgba(244, 151, 108, 0.84);
 }
 
 .featured-instructor-pink:hover {
-  background: #de3d83;
+  background: rgba(202, 131, 99, 0.84);
   color: rgba(0, 0, 0, 0.84);
 }
 
 .featured-instructor-teal {
-  background: rgba(0, 0, 0, 0.84);
+  background: rgba(251, 232, 166, 0.84);
 }
 
 .featured-instructor-teal:hover {
-  background: #00b8b8;
+  background: rgba(212, 196, 141, 0.84);
   color: rgba(0, 0, 0, 0.84);
 }
 
 .featured-instructor-purple {
-  background: rgba(0, 0, 0, 0.84);
+  background: rgba(180, 223, 229, 0.84);
 }
 
 .featured-instructor-purple:hover {
@@ -915,7 +937,8 @@ body.admin-bar .header {
 }
 
 .featured-instructor .button {
-  color: rgba(0, 0, 0, 0.84);
+  color: #EDAF7D;
+  background: #000000;
 }
 
 /**
@@ -1076,12 +1099,6 @@ body.admin-bar .header {
   .hero-content {
     background: rgba(237, 175, 125, 0.8);
   }
-  .home-goal-section,
-  .home-values-section,
-  .home-offer-section,
-  .home-style-section {
-    height: 500px;
-  }
 
   .featured-instructor {
     width: 29%;
@@ -1113,6 +1130,7 @@ body.admin-bar .header {
     color: #000;
     border-right: 1px solid #000;
     border-left: 1px solid #000;
+    background-color: rgba(237,175,125,0.8);
   }
 
   .main-navigation a:hover {
@@ -1175,7 +1193,6 @@ body.admin-bar .header {
   .main-navigation li {
     text-align: center;
     width: 100%;
-    padding: 4px 0;
     margin: 0;
   }
 
@@ -1225,15 +1242,6 @@ body.admin-bar .header {
     margin: 1em auto;
   }
 
-  .home-goal-section,
-  .home-values-section,
-  .home-offer-section,
-  .home-style-section {
-    float: none;
-    width: 100%;
-    height: auto;
-  }
-
   .featured-instructor {
     float: none;
     width: 100%;
@@ -1281,8 +1289,10 @@ body.admin-bar .header {
 
 /* ogranicena sirina sajta na 1680px odnosno 22 inca */
 .home {
-  max-width: 1680px; /*home-wrapper*/
+  /* max-width: 1680px; home-wrapper */
+  max-width: 1440px;
   margin: 77px auto 0px auto;
+  background: #ECECEC;
 }
 
 /* tekst efekat da uokviri crnom bojom slova */
@@ -1298,32 +1308,6 @@ body.admin-bar .header {
 .outline-text-color h3 {
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
-}
-
-/* url slika i njihovo pozicioniranje */
-
-.home-goal-section {
-  background: url(images/sopstvena-pravila996x651.jpg) no-repeat; /* promena
-   slike */
-  background-size: cover;
-  background-position: 52% 48%;
-}
-
-.home-values-section {
-  background: url(images/upoznas-sebe991x658.jpg) no-repeat;
-  background-size: cover;
-}
-
-.home-offer-section {
-  background: url(images/samopouzdanje1060x651.jpg) no-repeat;
-  background-size: cover;
-  background-position: 50% 50%;
-}
-
-.home-style-section {
-  background: url(images/sopstvene-moci966x651.jpg) no-repeat;
-  background-size: cover;
-  background-position: 50% 50%;
 }
 
 @media screen and (max-width: 768px) {
@@ -1355,24 +1339,6 @@ body.admin-bar .header {
   .outline-text-color p {
     font-size: 1.35em;
   }
-}
-
-.home-offer-section {
-  box-sizing: border-box;
-  font-size: 1.1em;
-  line-height: 1.8;
-  color: #fff;
-  padding: 0.5em;
-  text-align: center;
-  opacity: 0.75;
-}
-
-.home-offer-section h2 {
-  font-weight: 600;
-  font-size: 1.9375em;
-  line-height: 1.5483870967741935em;
-  margin-top: 0.7741935483870968em;
-  margin-bottom: 0.5741935483870968em;
 }
 
 @media only screen and (max-width: 1122px) {
@@ -1408,4 +1374,34 @@ body {
 
 nav div ul {
   padding: 0;
+}
+
+/* ukoliko zelis da - grid css */
+
+.main-wrapper:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.sqares-sizer {
+	float: left;
+	width: 25%;
+}
+
+.grid-if-you-want-to {
+width: 100%;
+}
+
+@media only screen and (max-width: 1000px) {
+	.sqares-sizer {
+		width: 50%;
+	}
+}
+
+@media only screen and (max-width: 420px) {
+	.sqares-sizer {
+		width: 100%;
+		float: none;
+	}
 }
