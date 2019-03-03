@@ -257,8 +257,7 @@ h5 {
   color: #a5a5a5;
 }
 
-h1,
-.page-title {
+h1, {
   font-weight: 600;
   font-size: 48px;
   line-height: 48px;
@@ -660,13 +659,9 @@ body.admin-bar .header {
 .main-navigation a {
   color: #000;
   text-decoration: none;
-  letter-spacing: 0.1em;
   display: block;
   padding-top: 40px;
   margin: 0 1.1em 0 1.1em;
-  -moz-transition: all 0.5s ease;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
   font-family: 'Josefin Sans', sans-serif;
   font-weight: bold;
   font-style: normal;
@@ -703,50 +698,11 @@ body.admin-bar .header {
   border-top: 1px dashed #fa9d5f;
 }
 
-.footer-navigation {
-  display: flex;
-  margin-bottom: 0;
-}
-
-.footer-navigation li {
-  list-style-type: none;
-}
-
-.footer-navigation a {
-  color: #ab5200;
-  text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  display: block;
-  padding: 0 1em;
-  transition: 0.5s all;
-}
-
-.footer-navigation a:hover {
-  color: #fa9d5f;
-}
-
 .copyright {
   max-width: 30%;
   text-align: center;
   margin-bottom: 0;
   color: #ab5200;
-}
-
-/**
- * Sidebar Styles
-*/
-
-.sidebar {
-  background: #5da87b;
-  float: right;
-  width: 30%;
-  padding: 1em;
-}
-
-.sidebar .widget-title,
-.sidebar .widget_text {
-  color: #fff;
 }
 
 /**
@@ -1001,7 +957,6 @@ color: #6E1E3D;
   .main-navigation:active {
     display: none;
     position: absolute;
-
     background: #fff;
     right: 0px;
     top: 100%;
